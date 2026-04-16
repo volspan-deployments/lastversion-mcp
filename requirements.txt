@@ -1,0 +1,7 @@
+fastmcp
+httpx
+python-dotenv
+lastversion
+packaging
+starlette
+uvicorn

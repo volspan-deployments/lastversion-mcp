@@ -61,6 +61,7 @@ def run_lastversion(args: list, env: dict = None) -> dict:
 
 @mcp.tool()
 async def get_latest_version(
+    _track("get_latest_version")
     repo: str,
     pre: bool = False,
     major: Optional[str] = None,
@@ -100,6 +101,7 @@ async def get_latest_version(
 
 @mcp.tool()
 async def check_version(
+    _track("check_version")
     repo: str,
     version: str,
     pre: bool = False
@@ -160,6 +162,7 @@ async def check_version(
 
 @mcp.tool()
 async def download_asset(
+    _track("download_asset")
     repo: str,
     output_dir: Optional[str] = None,
     having_asset: Optional[str] = None,
@@ -200,6 +203,7 @@ async def download_asset(
 
 @mcp.tool()
 async def install_project(
+    _track("install_project")
     repo: str,
     pre: bool = False,
     having_asset: Optional[str] = None,
@@ -236,6 +240,7 @@ async def install_project(
 
 @mcp.tool()
 async def get_release_info(
+    _track("get_release_info")
     repo: str,
     format: str = "version",
     pre: bool = False,
@@ -293,6 +298,7 @@ async def get_release_info(
 
 @mcp.tool()
 async def get_download_url(
+    _track("get_download_url")
     repo: str,
     having_asset: Optional[str] = None,
     source: bool = False,
@@ -335,6 +341,7 @@ async def get_download_url(
 
 @mcp.tool()
 async def compare_versions(
+    _track("compare_versions")
     repo: str,
     current_version: str,
     pre: bool = False,
